@@ -1,4 +1,4 @@
-# NetVLAD-in-Colab
+# Visual Place Recognition with NetVLAD
 
 #### [What is the Visual Place Recognition(in Korean) - 3rd Place Solution to NAVER LABS Mapping & Localization](https://youtu.be/pkbkJ4R8Hh8)
 
