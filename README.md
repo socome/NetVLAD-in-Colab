@@ -1,7 +1,5 @@
 # Visual Place Recognition with NetVLAD
 
-[![stars](https://img.shields.io/github/stars/socome/NetVLAD-in-Colab?style=social)](https://github.com/socome/NetVLAD-in-Colab/stargazers)
-
 #### [What is the Visual Place Recognition(in Korean) - 3rd Place Solution to NAVER LABS Mapping & Localization](https://youtu.be/pkbkJ4R8Hh8)
 
 ### How to run
