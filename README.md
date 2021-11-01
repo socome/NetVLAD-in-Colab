@@ -17,9 +17,14 @@
 
 ![image](https://user-images.githubusercontent.com/44772344/139667716-51c5ebfa-597b-428b-a9bf-12fe65a62e13.png)
 
-
 Berlin Kudamm Dataset 데이터셋은 경로는 같지만 시간과 뷰포인트 차이가 큰 Query/Reference 이미지 페어로 구성되어 있습니다.
 
+
+## 참고자료
+
+[NetVLAD: CNN architecture for weakly supervised place recognition](https://arxiv.org/abs/1511.07247)
+[A Hierarchical Dual Model of Environment- and Place-Specific Utility for Visual Place Recognition](https://ieeexplore.ieee.org/abstract/document/9484750)
+[Line as a Visual Sentence: Context-aware Line Descriptor for Visual Localization](https://arxiv.org/abs/2109.04753)
 
 # Visual Place Recognition with NetVLAD
 
