@@ -17,6 +17,7 @@
 - 학습/테스트 장수 : Reference 314장 / Query 280장
 - 데이터셋 특징
 
+![image](https://user-images.githubusercontent.com/44772344/139667716-51c5ebfa-597b-428b-a9bf-12fe65a62e13.png)
 
 
 Berlin Kudamm Dataset 데이터셋은 경로는 같지만 시간과 뷰포인트 차이가 큰 Query/Reference 이미지 페어로 구성되어 있습니다.
