@@ -1,15 +1,13 @@
 ## 챌린지 개요
 
-본 챌린지는 "Visual Place Recognition (VPR)"을 수행합니다. VPR 이란 이미지의 글로벌 기술자를 추출하여 데이터베이스에 저장하고, 새롭게 들어오는 쿼리이미지에 대해서 동일하게 글로벌 기술자를 추출하여 데이터 베이스에 저장된 기술자와 비교하여 가장 유사한 영상을 검색합니다. 이를 통해 쿼리 이미지가 촬영된 곳의 위치 등을 추정할 수 있습니다. 해당 기술은 GPS를 사용할 수 없거나, 부정확한 GPS를 대체할 수 있는 기술이며, 대표적인 사례로는 네이버 랩스에서 공개한 실내 네비게이션을 예시로 들 수 있습니다. 본 챌린지에서는 VPR에서 가장 기초가되는 NetVLAD 방법론을 베이스라인으로 설정하였습니다. VPR과 관련된 자세한 내용은 발표영상을 참고하시기 바랍니다.
-
-
+본 챌린지는 "Visual Place Recognition (VPR)"을 수행합니다. VPR 이란 이미지의 글로벌 기술자를 추출하여 데이터베이스에 저장하고, 새롭게 들어오는 쿼리이미지에 대해서 동일하게 글로벌 기술자를 추출하여 데이터 베이스에 저장된 기술자와 비교하여 가장 유사한 영상을 검색합니다. 이를 통해 쿼리 이미지가 촬영된 곳의 위치 등을 추정할 수 있습니다. 해당 기술은 GPS를 사용할 수 없거나, 부정확한 GPS를 대체할 수 있는 기술이며, 대표적인 사례로는 [네이버 랩스에서 공개한 실내 네비게이션](https://www.naverlabs.com/storyDetail/152)을 예시로 들 수 있습니다. 본 챌린지에서는 VPR에서 가장 기초가되는 NetVLAD 방법론을 베이스라인으로 설정하였습니다. VPR과 관련된 자세한 내용은 발표영상을 참고하시기 바랍니다.
 
 
 ## 베이스라인 관련
 - 베이스라인 코드 : NetVLAD-in-Colab
-- 베이스라인 방법론 : NetVLAD
-- 베이스라인 성능 : NetVLAD with Berlin Dataset - 38.21 Recall@1
-- 베이스라인 발표영상 :  2021-ComputerVision-Visual Place Recognition
+- 베이스라인 방법론 : [NetVLAD](https://arxiv.org/abs/1511.07247)
+- 베이스라인 성능 : [NetVLAD with Berlin Dataset - 38.21 Recall@1](https://ieeexplore.ieee.org/abstract/document/9484750)
+- 베이스라인 발표영상 :  [2021-ComputerVision-Visual Place Recognition](https://youtu.be/zmdHf3JalfE)
  
 
 ## 데이터 셋
