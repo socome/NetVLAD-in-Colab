@@ -391,6 +391,50 @@ with open(file_path, 'w') as outfile:
 ![image](https://user-images.githubusercontent.com/44772344/135705861-fa0157b2-35cc-4261-a28d-5fa452c4163a.png)
 
 
+#### Step 4. Check VPR
+
+
+```
+input_transform = transforms.Compose([
+      transforms.ToTensor(),
+      transforms.Normalize(mean=[0.485, 0.456, 0.406],
+                            std=[0.229, 0.224, 0.225]),
+      ])
+
+plot_dbStruct = parse_dbStruct('/content/drive/My Drive/컴퓨터비전/NetVLAD/berlin.mat')
+
+db_images = [join(root_dir, dbIm.replace(' ','')) for dbIm in plot_dbStruct.dbImage]
+q_images = [join(root_dir, qIm.replace(' ','')) for qIm in plot_dbStruct.qImage]
+
+from IPython.display import display
+
+index = 5
+
+q_img = Image.open(q_images[index])
+display(q_img)
+q_img = input_transform(q_img)
+```
+![image](https://user-images.githubusercontent.com/44772344/140687248-7042246e-f224-45f3-b7c7-46d6defbe216.png)
+```
+output_test = model.encoder(q_img.unsqueeze(dim=0).cuda())
+output_test = model.pool(output_test)
+query_feature = output_test.squeeze().detach().cpu().numpy()
+
+_, predictions = faiss_index.search(query_feature.reshape(1,-1), 5)
+
+for idx in predictions[0]:
+  db_img = Image.open(db_images[idx])
+  db_img = db_img.resize((int(db_img.width / 2), int(db_img.height / 2)))
+  display(db_img)
+  print("\n")
+```
+![image](https://user-images.githubusercontent.com/44772344/140687272-a5432f06-e7e6-4bfb-9013-e9d15a830ffe.png)
+![image](https://user-images.githubusercontent.com/44772344/140687276-bfba0061-d6d9-4f24-95b6-dab67bc29394.png)
+![image](https://user-images.githubusercontent.com/44772344/140687286-dbc15175-c612-4e88-9380-8889dec68f6f.png)
+![image](https://user-images.githubusercontent.com/44772344/140687366-c6d04a37-0747-441c-9985-9ee60767c17e.png)
+
+
+
 ### Reference code
 
 [NetVLAD-pytorch](https://github.com/Nanne/pytorch-NetVlad) <br/>
