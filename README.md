@@ -34,7 +34,11 @@ Berlin Kudamm Dataset 데이터셋은 경로는 같지만 시간과 뷰포인트
 
 #### Step 1. Downloading a source code(notebook) and Berlin Kudamm dataset
 
+##### Version 1
 [![Base](https://img.shields.io/badge/Download-Basecode%20%26%20Datasets-yellow)](https://drive.google.com/file/d/1b8UKHViSrZ2mbT27DqQxDj0D_xnLq1pC/view)
+
+##### Version 2
+[![Base](https://img.shields.io/badge/Download-Basecode%20%26%20Datasets-yellow)](https://drive.google.com/file/d/15Vv0rbNDBLJnESU1XPWEwGeYoUU0tdiM/view?usp=sharing)
 
 #### Step 2. Execute all code cells in the notebook (click on the notebook toolbar or press Ctrl + Shift + Alt + Enter)
 
